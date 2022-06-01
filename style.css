@@ -220,7 +220,6 @@ section .title::after{
 .services{
     color: #fff;
     background: #111;
-
 }
 .services .title::before{
     background: #fff;
@@ -229,11 +228,35 @@ section .title::after{
     background: #111;
     content: "What I Provide?";
 }
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+.seervic
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card #cardi{
+    font-size: 50px;
+    color: crimson;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
 
 /* services --> card styling start */
-.card{
-    
-}
+
 
 
 /* services --> card styling end */
