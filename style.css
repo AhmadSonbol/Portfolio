@@ -91,6 +91,10 @@
   margin: auto 0 auto 40px;
 }
 
+.home .home-content .text-2{
+    text-shadow: red -2px 0,
+                 cyan 4px 0;
+}
 .home .home-content .text-1{
   font-size: 27px;
 }
@@ -136,8 +140,7 @@ section{
 }
 .about .about-content, 
 .services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
+.skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -361,10 +364,67 @@ section .title::after{
     font-size: 25px;
     color: crimson;
 }
-.contact .contact-content #icon:hover{
-    font-size: 25px;
-    color: none;
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 15px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
     cursor: pointer;
+    transition: all 0,3s ease;
+}
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
 }
 /* contact section end */
 
