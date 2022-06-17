@@ -92,3 +92,11 @@ var typed = new Typed(".glitch", {
     loopCount: Infinity,
     startDelay:500,
 })
+var typed = new Typed(".typing-2", {
+    strings: ["a Web developer", "a Web Designer", "a Photo Editor", "a Polyglot", "a Cool Person ^_^"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+    loopCount: Infinity,
+    startDelay:500,
+})
