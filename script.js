@@ -62,7 +62,18 @@ $(document).ready(function() {
         }else{
             $('.navbar').removeClass("sticky");
         }
+        if(this.scroll > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
     });
+
+    // slide-up script
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+    });
+
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
@@ -70,3 +81,14 @@ $(document).ready(function() {
         $('.menu-btn i').toggleClass("active");
     });
 });
+
+
+// typing animation script
+var typed = new Typed(".glitch", {
+    strings: ["a Web developer", "a Web Designer", "a Photo Editor", "a Polyglot", "a Cool Person ^_^"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+    loopCount: Infinity,
+    startDelay:500,
+})
