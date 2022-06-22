@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 // typing animation script
 var typed = new Typed(".glitch", {
-    strings: ["a Web developer", "a Web Designer", "a Photo Editor", "a Polyglot", "a Cool Person ^_^"],
+    strings: ["a Web Developer", "a Web Designer", "a Photo Editor", "a Polyglot", "a Cool Person ^_^"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
