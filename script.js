@@ -93,7 +93,7 @@ var typed = new Typed(".glitch", {
     startDelay:500,
 })
 var typed = new Typed(".typing-2", {
-    strings: ["a Web developer", "a Web Designer", "a Photo Editor", "a Polyglot", "a Cool Person ^_^"],
+    strings: ["a Web Developer", "a Web Designer", "a Photo Editor", "a Polyglot", "a Cool Person ^_^"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
