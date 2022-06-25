@@ -90,7 +90,7 @@ var typed = new Typed(".glitch", {
     backSpeed: 60,
     loop: true,
     loopCount: Infinity,
-    startDelay:500,
+    startDelay:600,
 })
 var typed = new Typed(".typing-2", {
     strings: ["a Web Developer", "a Web Designer", "a Photo Editor", "a Polyglot", "a Cool Person ^_^"],
