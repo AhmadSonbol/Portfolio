@@ -92,7 +92,7 @@ html{
     border-radius: 6px;
     cursor: pointer;
     /* opacity: 0; */
-    pointer-events: none;
+    /* pointer-events: none; */
     transition: all 0,3s ease;
 }
 .scroll-up-btn.show{
@@ -250,7 +250,7 @@ section .title::after{
 /* services section styling start */
 .services{
     color: #fff;
-    background: #111;
+    background:#111;
 }
 .services .title::before{
     background: #fff;
@@ -293,7 +293,6 @@ section .title::after{
 }
 
 /* skills section start */
-
 .skills .title::after{
     content: "What I know?"; 
 }
