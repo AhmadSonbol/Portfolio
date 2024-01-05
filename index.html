@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -118,7 +117,7 @@
                         <div class="bars">
                             <div class="info">
                                 <span>HTML</span>
-                                <span>95%</span>
+                                <span>90%</span>
                             </div>
                             <div class="line html"></div>
                         </div>
@@ -132,14 +131,14 @@
                         <div class="bars">
                             <div class="info">
                                 <span>JavaScript</span>
-                                <span>35%</span>
+                                <span>45%</span>
                             </div>
                             <div class="line js"></div>
                         </div>
                         <div class="bars">
                             <div class="info">
                                 <span>Python</span>
-                                <span>0%</span>
+                                <span>10%</span>
                             </div>
                             <div class="line python"></div>
                         </div>
@@ -150,37 +149,40 @@
         <!-- projects section start -->
         <section class="projects" id="projects">
             <div class="max-width">
-                <div class="title">My projects</div>
-                <div  class="serv-content">
-                    <div class="card">
-                        <div class="box">
-                                    <i class="fa-solid fa-camera-retro fa-beat-fade" id="cardi"></i>
-                            <div class="text">Photography</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste ipsum vitae odit repellat iure maxime ipsa beatae sint ullam recusandae tempora eveniet nam sapiente corrupti, et deserunt incidunt blanditiis!</p>
+                <div class="title">My Projects</div>
+                    <div  class="proj-content">
+                        <div class="card">
+                            <div class="box">
+                                <div class="text">Parallax Scrolling Effects</div>
+                                <a href="https://midobolt.github.io/Parallax-Scrolling-Effects/" target="_blank">
+                                <img src="parallax-scrolling-effects.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <div class="text">Nike Store</div>
+                                <a href="https://midobolt.github.io/Nike-Store/" target="_blank">
+                                <img src="nike-store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <div class="text">Compound Interest Calculator</div>
+                                <a href="https://midobolt.github.io/Compound-Interest-Calc-with-Contribution/" target="_blank">
+                                <img src="compound-interest-calc-with-contribution.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <i class="fa-solid fa-code fa-beat-fade" id="cardi"></i>
+                                <div class="text">Web Development</div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste ipsum vitae odit repellat iure maxime ipsa beatae sint ullam recusandae tempora eveniet nam sapiente corrupti, et deserunt incidunt blanditiis!</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <i class="fa-solid fa-paintbrush fa-fade" id="cardi"></i>
-                            <div class="text">Photo Editing</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste ipsum vitae odit repellat iure maxime ipsa beatae sint ullam recusandae tempora eveniet nam sapiente corrupti, et deserunt incidunt blanditiis!</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <i class="fa-solid fa-language fa-fade" id="cardi"></i>
-                            <div class="text">Translation</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste ipsum vitae odit repellat iure maxime ipsa beatae sint ullam recusandae tempora eveniet nam sapiente corrupti, et deserunt incidunt blanditiis!</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <i class="fa-solid fa-code fa-beat-fade" id="cardi"></i>
-                            <div class="text">Web Development</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste ipsum vitae odit repellat iure maxime ipsa beatae sint ullam recusandae tempora eveniet nam sapiente corrupti, et deserunt incidunt blanditiis!</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- contact secetion start  -->
@@ -217,7 +219,7 @@
                     </div>
                     <div class="column right">
                         <div class="text">Message me</div>
-                        <form action="#" onsubmit="emailSend(); reset(); return false;">
+                        <form method="post">
                             <div class="fields">
                                 <div class="field name">
                                     <input type="text" placeholder="Name" id="name"   required>
@@ -248,5 +250,7 @@
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script src="https://smtpjs.com/v3/stmp.js"></script>
       <script src="script.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     </body>
 </html>

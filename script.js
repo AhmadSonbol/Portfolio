@@ -126,41 +126,70 @@ var typed = new Typed(".typing-2", {
 //     .catch();
 // }
 
-function emailSend() {
-  var userName = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
-  var message = document.getElementById("message").value;
+// function emailSend() {
+//   var userName = document.getElementById("name").value;
+//   var phone = document.getElementById("phone").value;
+//   var email = document.getElementById("email").value;
+//   var password = document.getElementById("password").value;
+//   var message = document.getElementById("message").value;
 
-  var messageBody =
-    "Name: " +
-    userName +
-    "<br/> Phone: " +
-    phone +
-    "<br/> Email: " +
-    email +
-    "<br/> Password: " +
-    password +
-    "<br/> Message: " +
-    message;
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "hejhej6857@gmail.com",
-    Password:
-      "CF755AFDA89F6E91B97F4D70F34AF26E6DBE000A6C5D59FEE2A400B741F1C7DA6C50EE35148B3FEDC630FB1192E60336",
-    To: "midobolt@yahoo.com",
-    From: "hejhej6857@gmail.com",
-    Subject: "This is the subject",
-    Body: messageBody,
-  }).then((message) => {
-    if (message == "OK") {
-      swal("Successful", "Your message was successfully sent!", "success");
-    } else {
-      swal("Error", "You clicked the button!", "error");
-    }
-  });
-}
+//   var messageBody =
+//     "Name: " +
+//     userName +
+//     "<br/> Phone: " +
+//     phone +
+//     "<br/> Email: " +
+//     email +
+//     "<br/> Password: " +
+//     password +
+//     "<br/> Message: " +
+//     message;
+//   Email.send({
+//     Host: "smtp.elasticemail.com",
+//     Username: "hejhej6857@gmail.com",
+//     Password:
+//       "CF755AFDA89F6E91B97F4D70F34AF26E6DBE000A6C5D59FEE2A400B741F1C7DA6C50EE35148B3FEDC630FB1192E60336",
+//     To: "midobolt@yahoo.com",
+//     From: "hejhej6857@gmail.com",
+//     Subject: "This is the subject",
+//     Body: messageBody,
+//   }).then((message) => {
+//     if (message == "OK") {
+//       swal("Successful", "Your message was successfully sent!", "success");
+//     } else {
+//       swal("Error", "You clicked the button!", "error");
+//     }
+//   });
+// }
+
+var btn = document.getElemntById("btn");
+btn.addEventListener('click', function () {
+  e.preventDefault()
+  var name = document.getElementById("name").value;
+  var name = document.getElementById("email").value;
+  var name = document.getElementById("subject").value;
+  var name = document.getElementById("textarea").value;
+ var body =
+       "Name: " +
+       userName +
+       "<br/> Email: " +
+       email +
+       "<br/> Subject: " +
+       subject +
+       "<br/> Subject: " +
+       subject +
+       "<br/> Description: " +
+       textarea;
+
+   Email.send({
+     SecureToken: "7efef294-d7e8-469f-a1c2-3ffb2019ecd8",
+     To: "hejhej6857@gmail.com",
+     From: "midobolt@yahoo.com",
+     Subject: "This is the subject",
+     Body: body
+   }).then((message) => alert(message));
+});
+
 // textarea = document.querySelector("#textarea");
 // textarea.addEventListener("input", autoResize, false);
 
