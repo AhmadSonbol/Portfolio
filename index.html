@@ -183,14 +183,14 @@
         <div class="title">My Projects</div>
         <div class="proj-content">
           <div class="slider">
-             <div class="item">
+            <div class="item">
               <div class="new">
                 <div class="text">Contact Form</div>
                 <a
                   href="https://midobolt.github.io/Contact-Form/"
                   target="_blank"
                 >
-                  <img class="imgx" src="contact-form.png" alt="" />
+                  <img class="imgx" src="photos/contact-form.png" alt="" />
                 </a>
               </div>
             </div>
@@ -201,7 +201,7 @@
                   href="https://midobolt.github.io/Nike-Store/"
                   target="_blank"
                 >
-                  <img src="nike-store.png" alt="" />
+                  <img src="photos/nike-store.png" alt="" />
                 </a>
               </div>
             </div>
@@ -212,7 +212,7 @@
                   href="https://midobolt.github.io/Simple-Interest-Calculator/"
                   target="_blank"
                 >
-                  <img src="simple-interest-calculator.png" alt="" />
+                  <img src="photos/simple-interest-calculator.png" alt="" />
                 </a>
               </div>
             </div>
@@ -223,7 +223,7 @@
                   href="https://midobolt.github.io/To-Do-List/"
                   target="_blank"
                 >
-                  <img src="todo-list.png" alt="" />
+                  <img src="photos/todo-list.png" alt="" />
                 </a>
               </div>
             </div>
@@ -234,7 +234,15 @@
                   href="https://addtocart-midobolt.netlify.app/"
                   target="_blank"
                 >
-                  <img class="imgx" src="add-to-cart.png" alt="" />
+                  <img class="imgx" src="photos/add-to-cart.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="new">
+                <div class="text">Analog Clock</div>
+                <a href="https://midobolt.github.io/Clock/" target="_blank">
+                  <img class="imgx" src="photos/clock.png" alt="" />
                 </a>
               </div>
             </div>
@@ -250,64 +258,105 @@
         <h2 class="title">Contact me</h2>
         <div class="contact-content">
           <div class="column left">
-            <div class="text">Get in touch</div>
+            <div class="text">Contact Information</div>
             <div class="flex">
-                <p class="parag">
-                  We're just one click away to help you take your brand or product
-                  from great to incredible. Fill in the form to share more details
-                  about your project.
-                </p>
-                <div class="icons">
-                  <div class="row">
-                    <i class="fas fa-user" id="icon"></i>
-                    <div class="info">
-                      <div class="head">Name</div>
-                      <div class="sub-title">Mido</div>
-                    </div>
+              <p class="parag">
+                We're just one click away to help you take your brand or product
+                from great to incredible. Fill in the form to share more details
+                about your project.
+              </p>
+              <div class="icons">
+                <div class="row">
+                  <i class="fas fa-user" id="icon"></i>
+                  <div class="info">
+                    <div class="head">Name</div>
+                    <div class="sub-title">Mido</div>
                   </div>
-                  <div class="row">
-                    <i class="fa-solid fa-phone" id="icon"></i>
-                    <div class="info">
-                      <div class="head">Phone</div>
-                      <div class="sub-title">072 788 0908</div>
-                    </div>
+                </div>
+                <div class="row">
+                  <i class="fa-solid fa-phone" id="icon"></i>
+                  <div class="info">
+                    <div class="head">Phone</div>
+                    <div class="sub-title">072 788 0908</div>
                   </div>
-                  <div class="row">
-                    <i class="fas fa-envelope" id="icon"></i>
-                    <div class="info">
-                      <div class="head">Email</div>
-                      <div class="sub-title">midobolt@yahoo.com</div>
-                    </div>
+                </div>
+                <div class="row">
+                  <i class="fas fa-envelope" id="icon"></i>
+                  <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">midobolt@yahoo.com</div>
                   </div>
+                </div>
+                <div class="row">
+                  <i class="fa-brands fa-github" id="icon"></i>
+                  <div class="info">
+                    <a
+                      href="https://github.com/midobolt"
+                      class="head"
+                      target="_blank"
+                      ><span>GitHub</span></a
+                    >
                   </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="column right">
             <div class="text">Message me</div>
-            <form method="post">
+            <form
+              action="https://formsubmit.co/midobolt@yahoo.com"
+              method="post"
+            >
               <div class="fields">
                 <div class="field name">
-                  <input type="text" placeholder="Name" id="name" required />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="name"
+                    name="name"
+                    required
+                  />
                 </div>
                 <div class="field email">
-                  <input type="email" placeholder="Email" id="email" required />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    name="email"
+                    required
+                  />
                 </div>
               </div>
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for reaching out!&#10;
+                This is an auto-reply confirming that your inquiry has been received.&#10;
+                I will respond to your message as soon as I can."/>
+              <input type="hidden" name="_template" value="box" />
+              <!-- <input type="hidden" name="_captcha" value="false" /> -->
+              <!-- <input
+                type="hidden"
+                name="_webhook"
+                value="https://yourdomain.co/your-webhook"
+              /> -->
               <div class="field">
                 <input
                   type="text"
                   placeholder="Subject"
                   id="subject"
+                  name="subject"
                   required
                 />
               </div>
               <div class="field textarea">
                 <textarea
-                type="text"
+                  type="text"
                   cols="30"
                   rows="10"
                   placeholder="Describe project.."
                   id="textarea"
+                  name="textarea"
                   required
                 ></textarea>
               </div>
