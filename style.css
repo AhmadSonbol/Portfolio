@@ -560,6 +560,9 @@ section .title::after {
   padding-top: 15px;
   resize: none;
 }
+.contact .file{
+  padding: 0 0 15px 0;
+}
 .contact .right form .button {
   height: 47px;
   width: 170px;
