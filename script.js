@@ -94,7 +94,7 @@ var typed = new Typed(".glitch", {
   startDelay: 600,
 });
 var typed = new Typed(".typing-2", {
-  strings: ["Web Developer", "Photographer", "Photo Editor", "Polyglot"],
+  strings: ["Code Enthusiast", "Photographer", "Photo Editor", "Polyglot"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
